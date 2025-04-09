@@ -1,0 +1,504 @@
+:root {
+    --primary: #D4AF37; /* Changed to premium gold */
+    --primary-dark: #B38B2D; /* Darker gold */
+    --gold: #FFD700;
+    --platinum: #E5E4E2;
+    --dark: #0A0A0A; /* Richer black */
+    --velvet: #800020; /* Deep burgundy */
+    --ivory: #FFFFF0;
+}
+/* Luxury Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+/* Age Verification - Now with VIP treatment */
+.age-verification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A0A0A 100%), url('https://example.com/vip-texture.jpg');
+    background-blend-mode: overlay;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(3px);
+}
+
+.verification-box {
+    background: rgba(10, 10, 10, 0.95);
+    padding: 50px;
+    border-radius: 0;
+    border: 1px solid var(--gold);
+    max-width: 600px;
+    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
+    border-image: linear-gradient(to right, var(--gold), var(--platinum)) 1;
+}
+
+.verification-logo {
+    max-width: 220px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5));
+}
+
+.verification-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--platinum);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.verification-btn {
+    background: linear-gradient(to right, var(--gold), var(--primary));
+    color: var(--dark);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 0;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.verification-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+}
+
+.btn-exit {
+    background: transparent;
+    color: var(--platinum);
+    border: 1px solid var(--platinum);
+    box-shadow: none;
+}
+
+/* Hero Section - Ultra VIP Treatment */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.4) 0%, rgba(128, 0, 32, 0.2) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--platinum);
+    padding: 0 20px;
+}
+
+.hero-logo {
+    max-width: 300px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7));
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    color: var(--gold);
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-vip {
+    background: linear-gradient(to right, var(--gold), var(--primary));
+    color: var(--dark);
+    border: none;
+    padding: 18px 45px;
+    font-size: 1.2rem;
+    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-vip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.6);
+}
+
+.btn-outline-vip {
+    background: transparent;
+    color: var(--platinum);
+    border: 1px solid var(--platinum);
+    padding: 18px 45px;
+    font-size: 1.2rem;
+    border-radius: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-outline-vip:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 40px;
+    color: var(--platinum);
+    font-size: 2.5rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.scroll-down:hover {
+    color: var(--gold);
+}
+
+/* Gallery Section - Curated Luxury */
+.gallery-section {
+    padding: 100px 0;
+    background-color: var(--dark);
+    background-image: url('https://example.com/luxury-texture.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, var(--gold), var(--primary));
+    margin: 20px auto 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+/* Footer - Discreet Luxury */
+footer {
+    background-color: #000;
+    padding: 70px 0 30px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--dark), #000);
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.footer-logo {
+    max-width: 180px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.social-icons a {
+    color: var(--platinum);
+    font-size: 1.5rem;
+    margin: 0 20px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.copyright {
+    margin-top: 40px;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Enhanced Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Elegant Gallery - Museum Quality */
+.elegant-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 30px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.gallery-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.zoom-icon {
+    font-size: 1.8rem;
+    opacity: 0;
+    transition: all 0.4s;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--gold);
+}
+
+.gallery-item:hover .zoom-icon {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Lightbox - VIP Viewing Experience */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+    animation: fadeIn 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.lightbox-content {
+    display: block;
+    max-width: 85%;
+    max-height: 85%;
+    margin: 5% auto;
+    animation: zoomIn 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+}
+
+.lightbox-caption {
+    color: var(--platinum);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: var(--platinum);
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.close-btn:hover {
+    color: var(--gold);
+    transform: rotate(90deg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .gallery-grid, .elegant-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .verification-box {
+        padding: 30px 20px;
+    }
+    
+    .gallery-grid, .elegant-gallery {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    
+    .gallery-img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-vip, .btn-outline-vip {
+        width: 100%;
+    }
+}
